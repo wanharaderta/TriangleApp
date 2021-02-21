@@ -38,7 +38,7 @@ class TriangleAppTests: XCTestCase {
   
   
   func testDetectEquilateralTrangle() {
-    XCTAssertEqual(try detectTriangle(2, 2, 2), "Segitiga Sama Sisi")
+    XCTAssertEqual(try detectTriangle(1, 2, 2), "Segitiga Sama Kaki")
   }
   
   func detectTriangle(
@@ -58,8 +58,6 @@ class TriangleAppTests: XCTestCase {
       return "Bukan Segitiga Sama Sisi"
     }
   }
-  
-  
 }
 
 enum TriangleError: Error {
