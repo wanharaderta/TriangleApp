@@ -47,15 +47,17 @@ class TriangleAppTests: XCTestCase {
     _ sideC: Int
   ) throws -> String {
     for side in [sideA, sideB, sideC] {
-      if  side < 1 {
+      if side < 1 {
         throw TriangleError.invalidInput
       }
     }
     
     if sideA == sideB && sideA == sideC {
       return "Segitiga Sama Sisi"
+    } else if sideA == sideB || sideA == sideC || sideB == sideC {
+      return "Segitiga Sama Kaki"
     } else {
-      return "Bukan Segitiga Sama Sisi"
+      return "Bukan Segitiga Sama Kaki dan Segitiga Sama Sisi"
     }
   }
 }
