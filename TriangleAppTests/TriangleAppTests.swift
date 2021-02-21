@@ -46,7 +46,7 @@ class TriangleAppTests: XCTestCase {
     XCTAssertEqual(try detectTriangle(1, 2, 1), "Segitiga Sama Kaki")
     XCTAssertEqual(try detectTriangle(1, 2, 2), "Segitiga Sama Kaki")
     XCTAssertEqual(try detectTriangle(2, 1, 2), "Segitiga Sama Kaki")
-  } 
+  }
   
   func detectTriangle(
     _ sideA: Int,
@@ -64,7 +64,7 @@ class TriangleAppTests: XCTestCase {
     } else if sideA == sideB || sideA == sideC || sideB == sideC {
       return "Segitiga Sama Kaki"
     } else {
-      return "Bukan Segitiga Sama Kaki dan Segitiga Sama Sisi"
+      return "Segitiga Sembarang"
     }
   }
 }
